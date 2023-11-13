@@ -1,0 +1,76 @@
+.user-profile-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-button {
+  background-color: #f0f8ff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  align-self: flex-start;
+}
+
+.country-dropdown {
+  height: 33.5px;
+  padding: 8px;
+  width: 202px;
+  margin-bottom: 16px;
+}
+
+.clock-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.user-information {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.user-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.post {
+  width: calc(100% - 20px);
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 601px) {
+  .user-profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-controls {
+    display: flex;
+    gap: 16px;
+  }
+  .country-dropdown {
+    width: 165px;
+    margin-bottom: 0px;
+  }
+  .post {
+    width: calc(33.33% - 36px);
+  }
+}
